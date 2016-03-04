@@ -1,0 +1,94 @@
+/*custom fonts - Bitter, Montserrat*/
+@import url('http://fonts.googleapis.com/css?family=Montserrat|Bitter');
+/*basic reset*/
+* {margin: 0; padding: 0;}
+section {
+	background: #fff;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	height: 800px;
+}
+
+h1 {
+	font: normal 32px/32px Bitter; color: white;
+	text-align: center; padding: 85px 100px;
+}
+
+/*nav styles*/
+
+.containerbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: rgb(251, 252, 252);;
+  z-index: 999;
+    -webkit-box-shadow: 0 10px 15px -4px rgba(255,0,0,0.3);
+  -moz-box-shadow: 0 10px 15px -4px rgba(255,0,0,0.3);
+  box-shadow: 0 10px 15px -4px rgba(255,0,0,0.3);
+  padding-left: 50%;
+}
+
+.anima{
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: #ff494c;
+  border-radius: 100%;
+  font-size: 24px;
+  text-align: center;
+  line-height: 54px;
+  margin-left:-25px;
+  margin-top: 75px;
+  transform: scale(1);
+}
+
+/*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
+.ink {
+	display: block; position: absolute;
+	top: 0;
+	background: rgba(255,0,0,0.4);
+	border-radius: 100%;
+	transform: scale(0);
+}
+.ink1 {
+	display: block; position: absolute;
+  top: 0;
+	background: rgba(255,0,0,0.1);
+	border-radius: 100%;
+	transform: scale(0);
+}
+.ink2 {
+	display: block; position: absolute;
+  top: 0;
+	background: rgba(255,0,0,0.2);
+	border-radius: 100%;
+	transform: scale(0);
+}
+/*animation effect*/
+.ink.animate {animation: ripple 1s linear;}
+.ink1.animate {animation: ripple1 1.5s linear;}
+.ink2.animate {animation: ripple2 2.5s linear;}
+.heart-anim {animation: heart 2.0s linear 3;}
+@keyframes ripple {
+	/*scale the element to 250% to safely cover the entire link and fade it out*/
+	100% {opacity: 0; transform: scale(3);}
+}
+@keyframes ripple1 {
+	/*scale the element to 250% to safely cover the entire link and fade it out*/
+	100% {opacity: 0; transform: scale(3);}
+}
+@keyframes ripple2 {
+	/*scale the element to 250% to safely cover the entire link and fade it out*/
+	100% {opacity: 0; transform: scale(3);}
+}
+@keyframes heart {
+	0% {transform: scale(1.1);}
+	20% {transform: scale(1);}
+	40% {transform: scale(1.2);}
+	60% {transform: scale(1);}
+	80% {transform: scale(1.1);}
+	100% {transform: scale(1);}
+}
