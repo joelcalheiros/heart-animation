@@ -1,5 +1,6 @@
 var parent, ink, d, x, y;
 $(function () {
+    new WOW().init();
     $(".animation").click(function (e) {
         parent = $(this);
 

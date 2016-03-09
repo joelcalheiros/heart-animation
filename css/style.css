@@ -7,7 +7,7 @@ section {
     background-size: cover;
     overflow: hidden;
     position: relative;
-    height: 800px;
+    height: 1500px;
 }
 
 h1 {
@@ -45,6 +45,30 @@ h1 {
     transform: scale(1);
 }
 
+li{
+    list-style: none;
+}
+
+#home .item{
+    height: 250px;
+    margin: 30px 0;
+    border: 1px solid #f5f5f5;
+    background: red;
+}
+
+#profile .item{
+    height: 250px;
+    margin: 30px 0;
+    border: 1px solid #f5f5f5;
+    background: greenyellow;
+}
+
+#messages .item{
+    height: 250px;
+    margin: 30px 0;
+    border: 1px solid #f5f5f5;
+    background: blueviolet;
+}
 /*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
 .ink {
     display: block; position: absolute;
