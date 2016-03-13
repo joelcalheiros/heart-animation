@@ -49,7 +49,6 @@
 			this.$navcategories.on( 'click.catslider', function() {
                             var $magicLine = $("#arrow");
                             var leftPos = $(this).position().left;
-                            var newWidth = $(this).width() + 60;
                             $magicLine.stop().animate({
                                 left: leftPos
                             });
